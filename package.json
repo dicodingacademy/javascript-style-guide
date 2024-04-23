@@ -11,10 +11,11 @@
     "url": "git+https://github.com/dicodingacademy/javascript-style-guide.git"
   },
   "keywords": [
-    "JavaScript",
-    "Style",
-    "Guide",
-    "ESLint"
+    "javascript",
+    "style",
+    "guide",
+    "eslint",
+    "eslintconfig"
   ],
   "author": "dicodingacademy",
   "license": "ISC",

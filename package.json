@@ -1,11 +1,9 @@
 {
-  "name": "@dicodingacademy/javascript-style-guide",
+  "name": "eslint-config-dicodingacademy",
   "version": "0.9.0",
   "description": "Standard style and guide for writing JavaScript in Dicoding Academy ecosystem",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dicodingacademy/javascript-style-guide.git"
@@ -22,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/dicodingacademy/javascript-style-guide/issues"
   },
-  "homepage": "https://github.com/dicodingacademy/javascript-style-guide#readme"
+  "homepage": "https://github.com/dicodingacademy/javascript-style-guide#readme",
+  "peerDependencies": {
+    "eslint": ">= 9"
+  }
 }

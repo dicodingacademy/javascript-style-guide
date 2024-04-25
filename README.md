@@ -8,6 +8,89 @@
 
 
 
+## ESLint Sharable Config
+
+Kami menyediakan ESlint *[sharable config](https://eslint.org/docs/latest/extend/shareable-configs)* yang bisa digunakan untuk menerapkan style guide yang didefinisikan di sini.
+
+### Using Sharable Config in ESLint  9 or Latest
+
+Pasang package ESLint dan `eslint-config-dicodingacademy` dengan menggunakan perintah di bawah ini.
+
+```shell
+npm install --save-dev eslint eslint-config-dicodingacademy
+```
+
+Buatlah berkas [konfigurasi ESLint](https://eslint.org/docs/latest/use/configure/#extending-configuration-files) (contoh: `eslint.config.mjs`) dan di dalamnya tulis kode di bawah ini.
+
+```javascript
+import daStyle from 'eslint-config-dicodingacademy';
+
+export default [
+  daStyle,
+  // other config style
+];
+
+```
+
+Anda bisa mendeteksi kesalahan penulisan JavaScript melalui perintah di bawah ini.
+
+```shell
+npx eslint
+```
+
+Jika ada kode yang tidak sesuai dengan aturan, ESLint akan menampilkan informasinya pada STDOUT.
+
+```text
+/home/dimas/eslint-test/index.js
+  1:22  error  Missing semicolon  semi
+
+✖ 1 problem (1 error, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+```
+
+
+
+### Using Sharable Config in ESLint < 9
+
+Pasang package ESLint (versi di bawah 9) dan `eslint-config-dicodingacademy` dengan menggunakan perintah di bawah ini.
+
+```shell
+npm install --save-dev eslint@8 eslint-config-dicodingacademy
+```
+
+Buatlah berkas [konfigurasi ESLint](https://eslint.org/docs/v8.x/use/configure/) (contoh: `.eslintrc.js`) dan di dalamnya tulis kode di bawah ini.
+
+```javascript
+module.exports = {
+  extends: ['dicodingacademy'],
+  parserOptions: {
+    ecmaVersion: 'latest'
+  }
+  // other config
+};
+
+```
+
+Anda bisa mendeteksi kesalahan penulisan JavaScript melalui perintah di bawah ini.
+
+```shell
+npx eslint
+```
+
+Jika ada kode yang tidak sesuai dengan aturan, ESLint akan menampilkan informasinya pada STDOUT.
+
+```text
+/home/dimas/eslint-test/index.js
+  1:22  error  Missing semicolon  semi
+
+✖ 1 problem (1 error, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+```
+
+
+
 ## Meta Rules
 
 ### Encoding menggunakan UTF-8

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-dicodingacademy",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "type": "module",
   "description": "Standard style and guide for writing JavaScript in Dicoding Academy ecosystem",
   "main": "index.js",

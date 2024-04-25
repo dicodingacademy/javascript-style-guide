@@ -1,7 +1,6 @@
 {
   "name": "eslint-config-dicodingacademy",
   "version": "0.9.1",
-  "type": "module",
   "description": "Standard style and guide for writing JavaScript in Dicoding Academy ecosystem",
   "main": "index.js",
   "scripts": {},
@@ -23,6 +22,6 @@
   },
   "homepage": "https://github.com/dicodingacademy/javascript-style-guide#readme",
   "peerDependencies": {
-    "eslint": ">= 9"
+    "eslint": ">= 8"
   }
 }

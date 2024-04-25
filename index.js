@@ -9,7 +9,7 @@ const config =  [
       'comma-spacing': ['error', { 'before': false, 'after': true }],
       'object-curly-spacing': ['error', 'always'],
       'array-bracket-spacing': ['error', 'never'],
-      'space-in-parent': ['error', 'never'],
+      'space-in-parens': ['error', 'never'],
       'space-before-function-paren': ['error', 'never'],
       'func-call-spacing': ['error', 'never'],
       'keyword-spacing': ['error', { 'before': true, 'after': true }],

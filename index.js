@@ -9,7 +9,7 @@ const plugin = {
     'object-curly-spacing': ['error', 'always'],
     'array-bracket-spacing': ['error', 'never'],
     'space-in-parens': ['error', 'never'],
-    'space-before-function-paren': ['error', 'never'],
+    'space-before-function-paren': ['error', {'anonymous': 'always', 'named': 'never', 'asyncArrow': 'always'}],
     'func-call-spacing': ['error', 'never'],
     'keyword-spacing': ['error', {'before': true, 'after': true}],
     'prefer-const': 'error',
